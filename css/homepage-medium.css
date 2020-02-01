@@ -76,4 +76,16 @@
     text-transform: uppercase;
     font-size: 0.5625rem;
   }
+
+  .gallery-item {
+    text-align: left;
+  }
+  .gallery-item:first-of-type {
+    padding: 2rem 6rem;
+    grid-column: span 2;
+    text-align: center;
+  }
+  .gallery-item:first-of-type .gallery-item__desciption {
+    display: block;
+  }
 }
