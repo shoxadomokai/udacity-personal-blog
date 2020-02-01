@@ -6,6 +6,8 @@
     <title>Personal Blog Project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/homepage-medium.css">
     <link rel="stylesheet" href="css/homepage-large.css">
@@ -13,101 +15,232 @@
 </head>
 
 <body>
+
     <header class="header-banner">
         <p class="date">JANUARY 28/2020</p>
         <h1 class="header-title">Norway Is the World’s <strong>First Nation to Ban Deforestation</strong></h1>
         <h6 class="header-author">by Vash T. Stampede</h6>
         <a href="" class="header-button">Read More</a>
     </header>
+
     <main class="featured-grid">
 
         <article class="featured-box" style="background-image: url(images/yellowstone.jpg)">
             <div class="overlay">
-                <h2 class="featured-box__title">Discover Yellowstone’s Secrets Under the Big Sky</h2>
-                <p class="featured-box__meta"><strong>Wildlife & Nature Posts</strong> / 28 JANUARY 2020</p>
+                <h2 class="featured-box__title">
+                    <a href="#">
+                        Discover Yellowstone’s Secrets Under the Big Sky
+                    </a>
+                </h2>
+                <p class="featured-box__meta date">
+                    <strong><a href="#">Wildlife & Nature Posts</a></strong> / 28 JANUARY 2020
+                </p>
             </div>
 
         </article>
 
         <article class="featured-box" style="background-image: url(images/mantis-gallery.jpg)">
             <div class="overlay">
-                <h2 class="featured-box__title">Wildlife Photo of the Week: Mantis</h2>
-                <p class="featured-box__meta"><strong>Photography</strong> / 24 JANUARY 2020</p>
+                <h2 class="featured-box__title">
+                    <a href="#">Wildlife Photo of the Week: Mantis</a>
+                </h2>
+                <p class="featured-box__meta date">
+                    <strong><a href="">Photography</a></strong> / 24 JANUARY 2020
+                </p>
             </div>
         </article>
 
         <article class="featured-box" style="background-image: url(images/puma.jpg)">
             <div class="overlay">
-                <h2 class="featured-box__title">Encountering a Puma in Patagonia</h2>
-                <p class="featured-box__meta"><strong>Wildlife & Nature Posts</strong> / 23 JANUARY 2020</p>
+                <h2 class="featured-box__title">
+                    <a href="#">Encountering a Puma in Patagonia</a>
+                </h2>
+                <p class="featured-box__meta date">
+                    <strong><a href="">Wildlife & Nature Posts</a></strong> / 23 JANUARY 2020
+                </p>
             </div>
 
         </article>
 
     </main>
-    <section class="latest-section">
+
+    <section class="latest-section" role="grid" aria-labelledby="latest-posts">
         <h1 class="blog-section__title">Latest Posts</h1>
         <main class="latest-grid">
 
             <article class="latest-post">
-                <div class="latest-post__image" style="background-image: url(images/cold-places.jpg)"></div>
-                <div class="latest-post__text">
-                    <h4 class="latest-post__title">Put Your Fears on Ice, and Travel to the Cold Places</h4>
-                    <p class="latest-post__body">A small ice rink, created by flooding a flat piece of ground in front
-                        of...</p>
-                    <p class="date"><strong>Travel Tips</strong> / 28 JANUARY 2020</p>
-                </div>
+                <a href="blogpost.html">
+                    <div class="latest-post__image" style="background-image: url(images/cold-places.jpg)"></div>
+                    <div class="latest-post__text">
+                        <h4 class="latest-post__title">
+                            Put Your Fears on Ice, and Travel to the Cold Places
+                        </h4>
+                        <p class="latest-post__body">A small ice rink, created by flooding a flat piece of ground in
+                            front
+                            of...</p>
+                        <p class="date"><strong>Travel Tips</strong> / 28 JANUARY 2020</p>
+                    </div>
+                </a>
             </article>
 
             <article class="latest-post">
-                <div class="latest-post__image" style="background-image: url(images/world-on-fire.jpg)"></div>
-                <div class="latest-post__text">
-                    <h4 class="latest-post__title">A World on Fire: Battling Blazes in Borneo’s Rain Forests</h4>
-                    <p class="latest-post__body">Forest fires hit home particularly hard in 2019, as people in every
-                        corner of the...</p>
-                    <p class="date"><strong>NEWS & MORE</strong> / 27 JANUARY 2020</p>
-                </div>
+                <a href="blogpost.html">
+                    <div class="latest-post__image" style="background-image: url(images/world-on-fire.jpg)"></div>
+                    <div class="latest-post__text">
+                        <h4 class="latest-post__title">A World on Fire: Battling Blazes in Borneo’s Rain Forests</h4>
+                        <p class="latest-post__body">Forest fires hit home particularly hard in 2019, as people in every
+                            corner of the...</p>
+                        <p class="date"><strong>NEWS & MORE</strong> / 27 JANUARY 2020</p>
+                    </div>
+                </a>
             </article>
 
             <article class="latest-post">
-                <div class="latest-post__image" style="background-image: url(images/norway.jpg)"></div>
-                <div class="latest-post__text">
-                    <h4 class="latest-post__title">Norway Is the World’s First Nation to Ban Deforestation</h4>
-                    <p class="latest-post__body">Norway is the first country in the world to commit to no longer using
-                        any...</p>
-                    <p class="date"><strong>Conservation Posts</strong> / 27 JANUARY 2020</p>
-                </div>
+                <a href="blogpost.html">
+                    <div class="latest-post__image" style="background-image: url(images/norway.jpg)"></div>
+                    <div class="latest-post__text">
+                        <h4 class="latest-post__title">Norway Is the World’s First Nation to Ban Deforestation</h4>
+                        <p class="latest-post__body">Norway is the first country in the world to commit to no longer
+                            using
+                            any...</p>
+                        <p class="date"><strong>Conservation Posts</strong> / 27 JANUARY 2020</p>
+                    </div>
+                </a>
             </article>
 
 
         </main>
 
     </section>
+
     <main class="gallery-grid">
 
         <div class="gallery-item" style="background-image: url(images/tanager-gallery.jpg)">
-            <h2 class="gallery-item__caption">Wildlife Photo of the Week: Summer Tanager Singing Away</h2>
+            <h2 class="gallery-item__caption">
+                <a href="gallery.html">Wildlife Photo of the Week: Summer Tanager Singing Away</a>
+            </h2>
             <p class="gallery-item__desciption">Every Friday, we choose our favorite photo of the week from our Wildlife
                 Photo of the Day website. This week we chose a singing tanager in North Carolina.</p>
-            <p class="date"><strong>PHOTOGRAPHY</strong> / JANUARY 31, 2020</p>
+            <p class="date"><strong><a href="">PHOTOGRAPHY</a></strong> / JANUARY 31, 2020</p>
         </div>
 
         <div class="gallery-item" style="background-image: url(images/giraffe-gallery.jpg)">
-            <h2 class="gallery-item__caption">Wildlife Photo of the
-                Week: Giraffe on Safari</h2>
+            <h2 class="gallery-item__caption">
+                <a href="gallery.html">Wildlife Photo of the Week: Giraffe on Safari</a>
+            </h2>
             <p class="gallery-item__desciption">Every Friday, we choose our favorite photo of the week from our Wildlife
                 Photo of the Day website. This week we chose a giraffe in South Africa.</p>
-            <p class="date"><strong>PHOTOGRAPHY</strong> / JANUARY 24, 2020</p>
+            <p class="date"><strong><a href="">PHOTOGRAPHY</a></strong> / JANUARY 24, 2020</p>
         </div>
 
         <div class="gallery-item" style="background-image: url(images/mantis-gallery.jpg)">
-            <h2 class="gallery-item__caption">Wildlife Photo of the Week: Mantis</h2>
+            <h2 class="gallery-item__caption">
+                <a href="gallery.html">Wildlife Photo of the Week: Mantis</a>
+            </h2>
             <p class="gallery-item__desciption">Every Friday, we choose our favorite photo of the week from our Wildlife
                 Photo of the Day website. This week we chose a giraffe in South Africa.</p>
-            <p class="date"><strong>PHOTOGRAPHY</strong> / JANUARY 17, 2020</p>
+            <p class="date"><strong><a href="">PHOTOGRAPHY</a></strong> / JANUARY 17, 2020</p>
         </div>
 
     </main>
+
+    <section class="top-section" role="grid" aria-labelledby="top-posts">
+        <h1 class="blog-section__title">Top Posts</h1>
+        <main class="top-grid">
+
+            <article class="top-post">
+                <a href="blogpost.html">
+                    <div class="top-post__image" role="img" aria-label="a picture of places you should visit in 2020"
+                        style="background-image: url(images/places-to-visit-in-2020.jpg)">
+                    </div>
+                    <div class="top-post__text">
+                        <p class="date"><strong>Travel Tips</strong> / 28 JANUARY 2020</p>
+                        <h4 class="top-post__title">
+                            9 Nat Hab destinations from NYT’s 52 places to visit in 2020
+                        </h4>
+                        <div class="top-post-meta">
+                            <p class="top-post-link">READ MORE</p>
+                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                    aria-label="comments"></i>200</div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="top-post">
+                <a href="blogpost.html">
+                    <div class="top-post__image" role="img" aria-label="an image of people running from fire"
+                        style="background-image: url(images/world-on-fire.jpg)"></div>
+                    <div class="top-post__text">
+                        <p class="date"><strong>News & More</strong> / 8 JANUARY 2020</p>
+                        <h4 class="top-post__title">
+                            A World on Fire: Battling Blazes in Borneo’s Rain Forests
+                        </h4>
+                        <div class="top-post-meta">
+                            <p class="top-post-link">READ MORE</p>
+                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                    aria-label="comments"></i>196</div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="top-post">
+                <a href="blogpost.html">
+                    <div class="top-post__image" role="img"
+                        aria-label="picture of a narwhal and baluga whale hybrid commonly called a narluga"
+                        style="background-image: url(images/narluga-narwhal-baluga-whale.jpg)">
+                    </div>
+                    <div class="top-post__text">
+                        <p class="date"><strong>Conservation</strong> / AUGUST 13, 2019</p>
+                        <h4 class="top-post__title">
+                            Greenland Whale Proves to Be the First Narwhal-Beluga Hybrid
+                        </h4>
+                        <div class="top-post-meta">
+                            <p class="top-post-link">READ MORE</p>
+                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                    aria-label="comments"></i>185</div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="top-post">
+                <a href="blogpost.html">
+                    <div class="top-post__image" role="img" aria-label="picture of elephants at a world heritage site"
+                        style="background-image: url(images/world-heritage-sites.jpg)"></div>
+                    <div class="top-post__text">
+                        <p class="date"><strong>Travel Tips</strong> / 8 JANUARY 2020</p>
+                        <h4 class="top-post__title">
+                            New Destinations: Italy, Australia, the Cotswolds & More!
+                        </h4>
+                        <div class="top-post-meta">
+                            <p class="top-post-link">READ MORE</p>
+                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                    aria-label="comments"></i>176</div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+        </main>
+
+    </section>
+
+    <div class="subscribe">
+        <div class="subscribe-text">
+            <h4 class="subscribe-text-caption">Our weekly eNewsletter highlights new adventures, exclusive offers,
+                webinars, nature news, travel ideas, photography tips and more.</h4>
+            <form class="subscribe-inline-form" action="" method="POST" role="subscribe">
+                <input required placeholder="Enter your email" class="input-field" type="email" name="email"
+                    id="email-input" aria-label="enter your email">
+                <button class="subscribe-inline-form__button" type="submit"><i class="fa fa-paper-plane"
+                        aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="subscribe-image" role="img" aria-label="picture of animals"></div>
+    </div>
+
 </body>
 
 </html>

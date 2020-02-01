@@ -27,7 +27,7 @@
     text-align: center;
   }
 
-  .featured-box:first-of-type h2 {
+  .featured-box:first-of-type .featured-box__title {
     font-size: 1.75rem;
   }
 
@@ -87,5 +87,31 @@
   }
   .gallery-item:first-of-type .gallery-item__desciption {
     display: block;
+  }
+
+  .top-post:nth-of-type(even) {
+    margin-top: 4rem;
+  }
+
+  .subscribe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    place-items: center;
+    text-align: left;
+    padding: 0 2.9375rem;
+  }
+  .subscribe-text {
+    grid-column: span 2;
+  }
+  .subscribe-text-caption {
+    font-size: 1rem;
+    padding-bottom: 1.4375rem;
+  }
+  .subscribe-image {
+    width: 221.54px;
+    height: 220px;
+    margin: 2.9375rem 0;
+    background-image: url(../images/medium-subscribe.png);
   }
 }
