@@ -44,7 +44,7 @@ main {
   color: white;
   padding: 0 10vw;
   text-align: center;
-  background-image: url(images/norway.jpg);
+  background-image: url(../images/norway.jpg);
   background-size: cover;
 }
 
