@@ -3,6 +3,10 @@
     font-size: 0.8rem;
   }
 
+  .nav-links.mobile {
+    font-size: 2rem;
+  }
+
   .header-title {
     font-size: 1.5625rem;
   }
