@@ -1,0 +1,79 @@
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  main {
+    padding: 7.5vh 13vw;
+  }
+  .date {
+    font-size: 0.8rem;
+  }
+  .header-banner {
+    padding: 0 13vw;
+  }
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  .header-button {
+    margin: 2rem 0;
+    font-size: 0.8rem;
+    padding: 1rem 2.5rem;
+    border: 2px solid white;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5rem;
+    grid-auto-flow: row dense;
+  }
+
+  .featured-box:first-of-type {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 397px;
+    padding: 3rem 10%;
+    text-align: left;
+  }
+
+  .featured-box:first-of-type .featured-box__title {
+    font-size: 1.75rem;
+  }
+
+  .featured-box {
+    text-align: left;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.25rem 10%;
+    position: relative;
+    z-index: 0;
+    color: white;
+    background-size: cover;
+  }
+
+  .featured-box:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  .featured-box__title {
+    padding: 3.2% 0;
+  }
+
+  .featured-box__meta {
+    text-transform: uppercase;
+    font-size: 0.5625rem;
+  }
+
+  .blog-section__title {
+    margin: 0 13vw;
+  }
+}
