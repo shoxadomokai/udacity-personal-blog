@@ -78,7 +78,7 @@
   }
 
   .gallery-grid {
-    grid-gap: 0.5rem;
+    grid-gap: 0;
     display: flex;
     align-items: flex-end;
   }
@@ -89,6 +89,7 @@
     padding: 4.25rem;
     text-align: left;
     transform: translateX(calc(-700px - 0.5rem));
+    margin: 0 0.25rem;
   }
 
   .gallery-item:first-of-type {
