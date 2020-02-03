@@ -279,6 +279,10 @@ button {
     padding: 5vh 7vw;
   }
 
+  .container-padding-large {
+    padding: 5vh 13vw;
+  }
+
   .date {
     font-size: 0.8rem;
   }

@@ -220,8 +220,6 @@
 
   .blog-body {
     grid-template-columns: repeat(4, 1fr);
-    position: sticky;
-    top: 0;
   }
 
   .article-navigation {
