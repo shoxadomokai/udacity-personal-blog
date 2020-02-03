@@ -1,0 +1,244 @@
+.blog-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.share-list {
+  padding: 4.8vw;
+  padding-bottom: 0;
+  list-style: none;
+  display: flex;
+}
+
+.share-list__items {
+  margin-right: 1rem;
+  opacity: 0.5;
+}
+
+.share-list__items:hover {
+  opacity: 1;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.blog-description {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.blog-author {
+  text-transform: capitalize;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.blog-header-image {
+  height: 40vh;
+  background: url(../images/people-planting-trees-in-ethopia.jpg) center center /
+    cover;
+}
+
+.blog-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  width: 100%;
+}
+
+.article-navigation {
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.main-text {
+  grid-row-start: 1;
+}
+
+.blog-body-image {
+  display: flex;
+  align-items: center;
+  max-height: 40vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blog-body-image img {
+  width: 100%;
+}
+
+.blog-body-image-multiple {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin: 1.5rem 0;
+}
+
+.blog-body-image-multiple img:last-of-type:nth-of-type(odd) {
+  grid-column: span 2;
+}
+
+.blog-body-image-multiple img {
+  width: 100%;
+}
+
+.blogpost-top-grid {
+  margin: 3.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+}
+
+.prev-article-post__image,
+.next-article-post__image {
+  height: 150px;
+  background: center/cover;
+}
+
+.prev-article-post__text,
+.next-article-post__text {
+  margin-top: 1.1875rem;
+}
+
+.prev-article-post__title,
+.next-article-post__title {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.prev-article-post__title a:hover,
+.next-article-post__title a:hover {
+  text-decoration: underline;
+}
+
+.prev-article-post-link,
+.next-article-post-link {
+  color: var(--blog-pink);
+}
+
+.prev-article-post-link:hover,
+.next-article-post-link:hover {
+  color: var(--blog-red);
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .blog-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .share-list {
+    padding: 0;
+    padding-left: 4.3vw;
+    padding-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .share-list__items {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+
+  .blog-title {
+    font-size: 1.5625rem;
+  }
+
+  .blog-description {
+    font-size: 1rem;
+  }
+
+  .blog-author {
+    text-transform: capitalize;
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .blog-header-image {
+    height: 50vh;
+  }
+
+  .article-navigation {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+  .blog-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .share-list {
+    padding: 0;
+    padding-left: 4.3vw;
+    padding-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .share-list__items {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+
+  .blog-title {
+    font-size: 2.5rem;
+  }
+
+  .blog-description {
+    font-size: 1rem;
+  }
+
+  .blog-author {
+    text-transform: capitalize;
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+  }
+
+  .blog-header-image {
+    height: 75vh;
+  }
+
+  .blog-body-image {
+    max-height: 60vh;
+  }
+
+  .blog-body-image-multiple {
+    grid-template-columns: repeat(auto-fit, 1fr);
+  }
+
+  .blog-body {
+    grid-template-columns: repeat(4, 1fr);
+    position: sticky;
+    top: 0;
+  }
+
+  .article-navigation {
+    display: block;
+    grid-row-start: 1;
+  }
+
+  .main-text {
+    grid-column: span 2;
+    grid-row-start: 1;
+  }
+
+  .top-wrapper {
+    grid-row-start: 1;
+  }
+
+  .blogpost-top-grid {
+    grid-template-columns: 1fr;
+  }
+}

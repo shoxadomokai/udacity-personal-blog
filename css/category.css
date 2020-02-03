@@ -1,0 +1,229 @@
+.header {
+  background-color: #222;
+  color: whitesmoke;
+  top: 0;
+}
+.category-banner {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.category-banner-text {
+  padding: 3.875rem 4.8vw;
+}
+
+.category-banner-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.category-banner-title a:hover {
+  text-decoration: underline;
+}
+
+.category-banner-description {
+  margin: 2.125rem 0;
+}
+
+.category-banner-image {
+  height: 50vh;
+  width: 100%;
+  background: url(../images/world-on-fire.jpg) center center / cover;
+}
+
+.posts-grid {
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.latest-section {
+  grid-column: span 2;
+}
+
+.blog-section__title {
+  margin: 0;
+}
+
+.latest-grid {
+  margin-top: 3.5rem;
+}
+
+.latest-post-wrapper {
+  margin: 2rem 0;
+}
+
+.latest-post {
+  display: flex;
+  flex-flow: row wrap;
+  transition: 0.3s all ease;
+  background-color: white;
+}
+.latest-post:hover {
+  transform: translateY(-1rem);
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.latest-post__image {
+  width: 100%;
+  min-height: 182px;
+  background-size: cover;
+}
+
+.latest-post__text {
+  padding: 1.875rem 0;
+  border-bottom: 2px solid var(--blog-red);
+}
+
+.latest-post__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.latest-post__body {
+  font-size: 0.875rem;
+  padding: 1.875rem 0 3.9375rem 0;
+}
+
+.top-grid {
+  margin: 3.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+}
+
+.top-post__image {
+  height: 300px;
+  background: center/cover;
+}
+
+.top-post:not(:first-of-type) .top-post__image {
+  height: 150px;
+}
+
+.top-post__text {
+  margin-top: 1.1875rem;
+}
+
+.top-post__title {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  margin: 1.1875rem 0 2rem 0;
+}
+
+.top-post__title a:hover {
+  text-decoration: underline;
+}
+
+.top-post-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.fa.fa-comments {
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.top-post-link:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .latest-post__image {
+    max-width: 50%;
+    background-size: cover;
+  }
+
+  .latest-post__text {
+    max-width: 50%;
+    padding: 1.875rem;
+  }
+
+  .top-section {
+    grid-column: span 2;
+  }
+
+  .top-post:nth-of-type(2) .top-post__image {
+    height: 300px;
+  }
+
+  .advert {
+    height: 30vh;
+    border: 2px solid #e4e4e4;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+
+  .advert-image {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e4e4e4;
+    background: url(../images/ads/ad-medium.jpg) center center / contain
+      no-repeat #1e73be;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+  .category-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .category-banner-text {
+    padding: 0 4.8vw;
+    padding-left: 13vw;
+    width: 50vw;
+    height: 100%;
+  }
+
+  .category-banner-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .category-banner-description {
+    margin: 4rem 0;
+  }
+
+  .category-banner-image {
+    width: 50vw;
+    height: 60vh;
+    background: url(../images/world-on-fire.jpg) center center / cover;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-column-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .latest-post__image {
+    max-width: 50%;
+    background-size: cover;
+  }
+
+  .latest-post__text {
+    max-width: 50%;
+    padding: 1.875rem;
+  }
+
+  .advert {
+    height: 50vh;
+    border: 2px solid #e4e4e4;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+
+  .advert-image {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e4e4e4;
+    background: url(../images/ads/ad-large.jpg) center center / contain
+      no-repeat #1e73be;
+  }
+}

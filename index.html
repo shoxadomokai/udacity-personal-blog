@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/homepage-medium.css">
-    <link rel="stylesheet" href="css/homepage-large.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -24,61 +23,61 @@
         </div>
         <nav class="navigation" role="navigation">
             <ul class="nav-links mobile">
-                <li class="nav-links__items">
+                <li class="nav-links__items active-link">
                     <a href="index.html"><i class="fa fa-home" aria-label="home"></i></a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html"><i class="fa fa-plane" aria-label="travel"></i></a>
+                    <a href="category.html"><i class="fa fa-plane" aria-label="travel"></i></a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html"><i class="fa fa-newspaper-o" aria-label="news"></i></a>
+                    <a href="category.html"><i class="fa fa-newspaper-o" aria-label="news"></i></a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html"><i class="fa fa-life-ring" aria-label="conservation"></i></a>
+                    <a href="category.html"><i class="fa fa-life-ring" aria-label="conservation"></i></a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html"><i class="fa fa-camera" aria-label="photography"></i></a>
+                    <a href="category.html"><i class="fa fa-camera" aria-label="photography"></i></a>
                 </li>
             </ul>
             <ul class="nav-links desktop">
-                <li class="nav-links__items">
+                <li class="nav-links__items active-link">
                     <a href="index.html">Home</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">Travel</a>
+                    <a href="category.html">Travel</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">News</a>
+                    <a href="category.html">News</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">Conservation</a>
+                    <a href="category.html">Conservation</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">Photography</a>
+                    <a href="category.html">Photography</a>
                 </li>
             </ul>
         </nav>
     </header>
 
 
-    <main class="header-banner">
+    <div class="homepage-banner container-padding-large">
         <p class="date">JANUARY 28/2020</p>
-        <h1 class="header-title">Norway Is the World’s <strong>First Nation to Ban Deforestation</strong></h1>
-        <h6 class="header-author">by Vash T. Stampede</h6>
-        <a href="" class="header-button">Read More</a>
-    </main>
+        <h1 class="homepage-banner-title">Norway Is the World’s <strong>First Nation to Ban Deforestation</strong></h1>
+        <h6 class="homepage-banner-author">by Vash T. Stampede</h6>
+        <a href="blogpost.html" class="homepage-banner-button">Read More</a>
+    </div>
 
-    <main class="featured-grid">
+    <main role="main" class="featured-grid container-padding-large">
 
         <article class="featured-box" style="background-image: url(images/yellowstone.jpg)">
             <div class="overlay">
                 <h2 class="featured-box__title">
-                    <a href="#">
+                    <a href="blogpost.html">
                         Discover Yellowstone’s Secrets Under the Big Sky
                     </a>
                 </h2>
                 <p class="featured-box__meta date">
-                    <strong><a href="#">Wildlife & Nature Posts</a></strong> / 28 JANUARY 2020
+                    <strong><a href="category.html">Wildlife & Nature Posts</a></strong> / 28 JANUARY 2020
                 </p>
             </div>
 
@@ -87,10 +86,10 @@
         <article class="featured-box" style="background-image: url(images/mantis-gallery.jpg)">
             <div class="overlay">
                 <h2 class="featured-box__title">
-                    <a href="#">Wildlife Photo of the Week: Mantis</a>
+                    <a href="blogpost.html">Wildlife Photo of the Week: Mantis</a>
                 </h2>
                 <p class="featured-box__meta date">
-                    <strong><a href="">Photography</a></strong> / 24 JANUARY 2020
+                    <strong><a href="category.html">Photography</a></strong> / 24 JANUARY 2020
                 </p>
             </div>
         </article>
@@ -98,10 +97,10 @@
         <article class="featured-box" style="background-image: url(images/puma.jpg)">
             <div class="overlay">
                 <h2 class="featured-box__title">
-                    <a href="#">Encountering a Puma in Patagonia</a>
+                    <a href="blogpost.html">Encountering a Puma in Patagonia</a>
                 </h2>
                 <p class="featured-box__meta date">
-                    <strong><a href="">Wildlife & Nature Posts</a></strong> / 23 JANUARY 2020
+                    <strong><a href="category.html">Wildlife & Nature Posts</a></strong> / 23 JANUARY 2020
                 </p>
             </div>
 
@@ -111,7 +110,7 @@
 
     <section class="latest-section" role="grid" aria-labelledby="latest-posts">
         <h1 class="blog-section__title">Latest Posts</h1>
-        <main class="latest-grid">
+        <div class="latest-grid container-padding-large">
 
             <article class="latest-post">
                 <a href="blogpost.html">
@@ -154,11 +153,11 @@
             </article>
 
 
-        </main>
+        </div>
 
     </section>
 
-    <main class="gallery-grid">
+    <div class="gallery-grid container-padding-large">
 
         <div class="gallery-item" style="background-image: url(images/tanager-gallery.jpg)">
             <h2 class="gallery-item__caption">
@@ -187,88 +186,80 @@
             <p class="date"><strong><a href="">PHOTOGRAPHY</a></strong> / JANUARY 17, 2020</p>
         </div>
 
-    </main>
+    </div>
 
     <section class="top-section" role="grid" aria-labelledby="top-posts">
         <h1 class="blog-section__title">Top Posts</h1>
-        <main class="top-grid">
+        <div class="top-grid container-padding-large">
 
             <article class="top-post">
-                <a href="blogpost.html">
-                    <div class="top-post__image" role="img" aria-label="a picture of places you should visit in 2020"
-                        style="background-image: url(images/places-to-visit-in-2020.jpg)">
+                <div class="top-post__image" role="img" aria-label="a picture of places you should visit in 2020"
+                    style="background-image: url(images/places-to-visit-in-2020.jpg)">
+                </div>
+                <div class="top-post__text">
+                    <p class="date"><strong><a href="blogpost.html">Travel Tips</a></strong> / 28 JANUARY 2020</p>
+                    <h4 class="top-post__title">
+                        <a href="blogpost.html">9 Nat Hab destinations from NYT’s 52 places to visit in 2020</a>
+                    </h4>
+                    <div class="top-post-meta">
+                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                aria-label="comments"></i>200</div>
                     </div>
-                    <div class="top-post__text">
-                        <p class="date"><strong>Travel Tips</strong> / 28 JANUARY 2020</p>
-                        <h4 class="top-post__title">
-                            9 Nat Hab destinations from NYT’s 52 places to visit in 2020
-                        </h4>
-                        <div class="top-post-meta">
-                            <p class="top-post-link">READ MORE</p>
-                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
-                                    aria-label="comments"></i>200</div>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </article>
 
             <article class="top-post">
-                <a href="blogpost.html">
-                    <div class="top-post__image" role="img" aria-label="an image of people running from fire"
-                        style="background-image: url(images/world-on-fire.jpg)"></div>
-                    <div class="top-post__text">
-                        <p class="date"><strong>News & More</strong> / 8 JANUARY 2020</p>
-                        <h4 class="top-post__title">
-                            A World on Fire: Battling Blazes in Borneo’s Rain Forests
-                        </h4>
-                        <div class="top-post-meta">
-                            <p class="top-post-link">READ MORE</p>
-                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
-                                    aria-label="comments"></i>196</div>
-                        </div>
+                <div class="top-post__image" role="img" aria-label="an image of people running from fire"
+                    style="background-image: url(images/world-on-fire.jpg)"></div>
+                <div class="top-post__text">
+                    <p class="date"><strong><a href="blogpost.html">News & More</a></strong> / 8 JANUARY 2020</p>
+                    <h4 class="top-post__title">
+                        <a href="blogpost.html">A World on Fire: Battling Blazes in Borneo’s Rain Forests</a>
+                    </h4>
+                    <div class="top-post-meta">
+                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                aria-label="comments"></i>196</div>
                     </div>
-                </a>
+                </div>
             </article>
 
             <article class="top-post">
-                <a href="blogpost.html">
-                    <div class="top-post__image" role="img"
-                        aria-label="picture of a narwhal and baluga whale hybrid commonly called a narluga"
-                        style="background-image: url(images/narluga-narwhal-baluga-whale.jpg)">
+                <div class="top-post__image" role="img"
+                    aria-label="picture of a narwhal and baluga whale hybrid commonly called a narluga"
+                    style="background-image: url(images/narluga-narwhal-baluga-whale.jpg)">
+                </div>
+                <div class="top-post__text">
+                    <p class="date"><strong><a href="blogpost.html">Conservation</a></strong> / AUGUST 13, 2019</p>
+                    <h4 class="top-post__title">
+                        <a href="blogpost.html">Greenland Whale Proves to Be the First Narwhal-Beluga Hybrid </a>
+                    </h4>
+                    <div class="top-post-meta">
+                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                aria-label="comments"></i>185</div>
                     </div>
-                    <div class="top-post__text">
-                        <p class="date"><strong>Conservation</strong> / AUGUST 13, 2019</p>
-                        <h4 class="top-post__title">
-                            Greenland Whale Proves to Be the First Narwhal-Beluga Hybrid
-                        </h4>
-                        <div class="top-post-meta">
-                            <p class="top-post-link">READ MORE</p>
-                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
-                                    aria-label="comments"></i>185</div>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </article>
 
             <article class="top-post">
-                <a href="blogpost.html">
-                    <div class="top-post__image" role="img" aria-label="picture of elephants at a world heritage site"
-                        style="background-image: url(images/world-heritage-sites.jpg)"></div>
-                    <div class="top-post__text">
-                        <p class="date"><strong>Travel Tips</strong> / 8 JANUARY 2020</p>
-                        <h4 class="top-post__title">
-                            New Destinations: Italy, Australia, the Cotswolds & More!
-                        </h4>
-                        <div class="top-post-meta">
-                            <p class="top-post-link">READ MORE</p>
-                            <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
-                                    aria-label="comments"></i>176</div>
-                        </div>
+                <div class="top-post__image" role="img" aria-label="picture of elephants at a world heritage site"
+                    style="background-image: url(images/world-heritage-sites.jpg)"></div>
+                <div class="top-post__text">
+                    <p class="date"><strong><a href="blogpost.html">Travel Tips</a></strong> / 8 JANUARY 2020</p>
+                    <h4 class="top-post__title">
+                        <a href="blogpost.html">New Destinations: Italy, Australia, the Cotswolds & More!</a>
+                    </h4>
+                    <div class="top-post-meta">
+                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
+                                aria-label="comments"></i>176</div>
                     </div>
-                </a>
+                </div>
             </article>
 
-        </main>
+        </div>
 
     </section>
 
@@ -300,16 +291,16 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">Travel</a>
+                    <a href="category.html">Travel</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">News</a>
+                    <a href="category.html">News</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">Conservation</a>
+                    <a href="category.html">Conservation</a>
                 </li>
                 <li class="nav-links__items">
-                    <a href="index.html">Photography</a>
+                    <a href="category.html">Photography</a>
                 </li>
             </ul>
         </nav>
