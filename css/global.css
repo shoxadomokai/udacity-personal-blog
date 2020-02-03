@@ -52,7 +52,12 @@ button {
   margin-right: 1rem;
 }
 
-.underline-hover:hover {
+.ease-03 {
+  transition: 0.3s all ease;
+}
+
+.underline-hover:hover,
+.underline-hover:focus {
   text-decoration: underline;
 }
 
@@ -72,11 +77,18 @@ button {
 
 .nav-links__items {
   opacity: 0.2;
+  margin: 1vw;
+  display: block;
 }
 
 .nav-links__items.active-link,
-.nav-links__items:hover {
+.nav-links__items:hover,
+.nav-links__items:focus {
   opacity: 1;
+}
+
+.active-link:focus {
+  font-weight: 900;
 }
 
 .header-logo,
@@ -88,8 +100,7 @@ button {
   position: sticky;
   z-index: 10000;
   left: 0;
-  top: -6.5vh;
-  /* padding: 1rem; */
+  top: -57.5167px;
   text-align: center;
   background-color: whitesmoke;
 }
@@ -146,11 +157,21 @@ button {
 }
 
 .input-field {
-  border: none;
+  border: 2px solid #222;
   border-radius: 10px;
   padding: 1.1875rem;
   width: 100%;
-  background-color: #ffecf4;
+  background-color: var(--blog-pink);
+}
+
+.input-field:not(:valid):focus,
+.input-field:not(:valid):active {
+  border: 2px solid var(--blog-red);
+}
+
+.input-field:valid:focus,
+.input-field:valid:active {
+  border: 2px solid lightseagreen;
 }
 
 .input-field:not(:valid) ~ .subscribe-inline-form__button {
@@ -169,7 +190,41 @@ button {
   transition: 0.3s all ease;
 }
 
-.subscribe-inline-form__button:hover {
+.email-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.1875rem;
+  transition: 0.3s all ease;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+}
+
+.input-field:focus ~ .email-label,
+.input-field:valid ~ .email-label,
+.input-field:not(:placeholder-shown) ~ .email-label {
+  top: 0;
+  background-color: var(--blog-pink);
+}
+
+.input-field:not(:placeholder-shown):valid {
+  border: 2px solid lightseagreen;
+}
+
+.input-field:not(:placeholder-shown):valid ~ .email-label {
+  color: lightseagreen;
+}
+
+.input-field:valid:focus ~ .email-label {
+  color: lightseagreen;
+}
+
+.input-field:not(:valid):focus ~ .email-label {
+  color: var(--blog-red);
+}
+
+.subscribe-inline-form__button:hover,
+.subscribe-inline-form__button:focus {
   color: blue !important;
 }
 
@@ -180,13 +235,14 @@ button {
   color: white;
 }
 
-.logo {
+.logo-link {
   opacity: 0.1;
   cursor: pointer;
   transition: 0.1s all ease;
 }
 
-.logo:hover {
+.logo-link:hover,
+.logo-link:focus {
   opacity: 1;
 }
 
@@ -207,10 +263,6 @@ button {
   margin: 2rem 0;
 }
 
-.nav-links__items {
-  margin: 2vw;
-}
-
 .social-list {
   display: none;
 }
@@ -221,7 +273,7 @@ button {
   list-style: none;
   justify-content: space-evenly;
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem 0 4rem 0;
 }
 
 .social-list-mobile .social-list__items {
@@ -247,7 +299,7 @@ button {
 
   .header {
     position: sticky;
-    top: -9vh;
+    top: -96.8px;
   }
   .nav-links.mobile {
     font-size: 2rem;
@@ -291,7 +343,7 @@ button {
 
   .header {
     position: sticky;
-    top: -10vh;
+    top: -90px;
   }
 
   .header-logo .logo {
@@ -354,7 +406,7 @@ button {
     cursor: pointer;
   }
 
-  .social-list .social-list__items a {
+  .social-list__links {
     text-decoration: none;
     color: inherit;
   }
@@ -375,11 +427,13 @@ button {
     color: var(--blog-pink);
   }
 
-  .social-list .social-list__items:hover .social-media-app-name {
+  .social-list .social-list__items:hover .social-media-app-name,
+  .social-list .social-list__links:focus .social-media-app-name {
     color: var(--blog-red);
   }
 
-  .social-list .social-list__items:hover .cta-text {
+  .social-list .social-list__items:hover .cta-text,
+  .social-list__links:focus .cta-text {
     transform: translateY(-2rem);
   }
 

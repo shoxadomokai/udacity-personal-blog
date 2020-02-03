@@ -28,7 +28,8 @@
   transition: 0.3s all ease;
 }
 
-.homepage-banner-button:hover {
+.homepage-banner-button:hover,
+.homepage-banner-button:focus {
   background-position: left;
   color: black;
 }
@@ -99,7 +100,8 @@
   border-bottom: 2px solid var(--blog-red);
   background-color: white;
 }
-.latest-post:hover {
+.latest-post:hover,
+.latest-post:focus {
   transform: translateY(-1rem);
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
 }
