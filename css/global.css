@@ -40,12 +40,20 @@ button {
   margin-bottom: 1.5rem;
 }
 
+.my-16 {
+  margin: 1.625rem 0;
+}
+
 .ml-1 {
   margin-left: 1rem;
 }
 
 .mr-1 {
   margin-right: 1rem;
+}
+
+.underline-hover:hover {
+  text-decoration: underline;
 }
 
 .container-padding-large,
@@ -66,7 +74,8 @@ button {
   opacity: 0.2;
 }
 
-.nav-links__items.active-link {
+.nav-links__items.active-link,
+.nav-links__items:hover {
   opacity: 1;
 }
 
@@ -88,10 +97,6 @@ button {
 .date {
   font-size: 0.8rem;
   text-transform: uppercase;
-}
-
-.date a:hover {
-  text-decoration: underline;
 }
 
 .blog-section__title {
@@ -204,9 +209,6 @@ button {
 
 .nav-links__items {
   margin: 2vw;
-}
-.nav-links__items:hover {
-  text-decoration: underline;
 }
 
 .social-list {

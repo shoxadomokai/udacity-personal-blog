@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="icon" href="favicon.ico">
 </head>
@@ -72,12 +72,13 @@
         <article class="featured-box" style="background-image: url(images/yellowstone.jpg)">
             <div class="overlay">
                 <h2 class="featured-box__title">
-                    <a href="blogpost.html">
+                    <a class="underline-hover" href="blogpost.html">
                         Discover Yellowstone’s Secrets Under the Big Sky
                     </a>
                 </h2>
                 <p class="featured-box__meta date">
-                    <strong><a href="category.html">Wildlife & Nature Posts</a></strong> / 28 JANUARY 2020
+                    <strong><a class="underline-hover" href="category.html">Wildlife & Nature Posts</a></strong> / 28
+                    JANUARY 2020
                 </p>
             </div>
 
@@ -86,10 +87,10 @@
         <article class="featured-box" style="background-image: url(images/mantis-gallery.jpg)">
             <div class="overlay">
                 <h2 class="featured-box__title">
-                    <a href="blogpost.html">Wildlife Photo of the Week: Mantis</a>
+                    <a class="underline-hover" href="blogpost.html">Wildlife Photo of the Week: Mantis</a>
                 </h2>
                 <p class="featured-box__meta date">
-                    <strong><a href="category.html">Photography</a></strong> / 24 JANUARY 2020
+                    <strong><a class="underline-hover" href="category.html">Photography</a></strong> / 24 JANUARY 2020
                 </p>
             </div>
         </article>
@@ -97,10 +98,11 @@
         <article class="featured-box" style="background-image: url(images/puma.jpg)">
             <div class="overlay">
                 <h2 class="featured-box__title">
-                    <a href="blogpost.html">Encountering a Puma in Patagonia</a>
+                    <a class="underline-hover" href="blogpost.html">Encountering a Puma in Patagonia</a>
                 </h2>
                 <p class="featured-box__meta date">
-                    <strong><a href="category.html">Wildlife & Nature Posts</a></strong> / 23 JANUARY 2020
+                    <strong><a class="underline-hover" href="category.html">Wildlife & Nature Posts</a></strong> / 23
+                    JANUARY 2020
                 </p>
             </div>
 
@@ -114,7 +116,9 @@
 
             <article class="latest-post">
                 <a href="blogpost.html">
-                    <div class="latest-post__image" style="background-image: url(images/cold-places.jpg)"></div>
+                    <div class="latest-post__image-wrapper">
+                        <img class="latest-post__image" src="images/cold-places.jpg" alt="picture of a frozen forest">
+                    </div>
                     <div class="latest-post__text">
                         <h4 class="latest-post__title">
                             Put Your Fears on Ice, and Travel to the Cold Places
@@ -129,7 +133,10 @@
 
             <article class="latest-post">
                 <a href="blogpost.html">
-                    <div class="latest-post__image" style="background-image: url(images/world-on-fire.jpg)"></div>
+                    <div class="latest-post__image-wrapper">
+                        <img class="latest-post__image" src="images/world-on-fire.jpg"
+                            alt="a picture of people running from fire">
+                    </div>
                     <div class="latest-post__text">
                         <h4 class="latest-post__title">A World on Fire: Battling Blazes in Borneo’s Rain Forests</h4>
                         <p class="latest-post__body">Forest fires hit home particularly hard in 2019, as people in every
@@ -141,12 +148,12 @@
 
             <article class="latest-post">
                 <a href="blogpost.html">
-                    <div class="latest-post__image" style="background-image: url(images/norway.jpg)"></div>
+                    <div class="latest-post__image-wrapper">
+                        <img class="latest-post__image" src="images/norway.jpg" alt="a forest in norway"></div>
                     <div class="latest-post__text">
                         <h4 class="latest-post__title">Norway Is the World’s First Nation to Ban Deforestation</h4>
                         <p class="latest-post__body">Norway is the first country in the world to commit to no longer
-                            using
-                            any...</p>
+                            using any...</p>
                         <p class="date"><strong>Conservation Posts</strong> / 27 JANUARY 2020</p>
                     </div>
                 </a>
@@ -159,32 +166,33 @@
 
     <div class="gallery-grid container-padding-large">
 
-        <div class="gallery-item" style="background-image: url(images/tanager-gallery.jpg)">
+        <article class="gallery-item" style="background-image: url(images/tanager-gallery.jpg)">
             <h2 class="gallery-item__caption">
-                <a href="gallery.html">Wildlife Photo of the Week: Summer Tanager Singing Away</a>
+                <a class="underline-hover" href="gallery.html">Wildlife Photo of the Week: Summer Tanager Singing
+                    Away</a>
             </h2>
             <p class="gallery-item__desciption">Every Friday, we choose our favorite photo of the week from our Wildlife
                 Photo of the Day website. This week we chose a singing tanager in North Carolina.</p>
-            <p class="date"><strong><a href="">PHOTOGRAPHY</a></strong> / JANUARY 31, 2020</p>
-        </div>
+            <p class="date"><strong><a class="underline-hover" href="">PHOTOGRAPHY</a></strong> / JANUARY 31, 2020</p>
+        </article>
 
-        <div class="gallery-item" style="background-image: url(images/giraffe-gallery.jpg)">
+        <article class="gallery-item" style="background-image: url(images/giraffe-gallery.jpg)">
             <h2 class="gallery-item__caption">
-                <a href="gallery.html">Wildlife Photo of the Week: Giraffe on Safari</a>
+                <a class="underline-hover" href="gallery.html">Wildlife Photo of the Week: Giraffe on Safari</a>
             </h2>
             <p class="gallery-item__desciption">Every Friday, we choose our favorite photo of the week from our Wildlife
                 Photo of the Day website. This week we chose a giraffe in South Africa.</p>
-            <p class="date"><strong><a href="">PHOTOGRAPHY</a></strong> / JANUARY 24, 2020</p>
-        </div>
+            <p class="date"><strong><a class="underline-hover" href="">PHOTOGRAPHY</a></strong> / JANUARY 24, 2020</p>
+        </article>
 
-        <div class="gallery-item" style="background-image: url(images/mantis-gallery.jpg)">
+        <article class="gallery-item" style="background-image: url(images/mantis-gallery.jpg)">
             <h2 class="gallery-item__caption">
-                <a href="gallery.html">Wildlife Photo of the Week: Mantis</a>
+                <a class="underline-hover" href="gallery.html">Wildlife Photo of the Week: Mantis</a>
             </h2>
             <p class="gallery-item__desciption">Every Friday, we choose our favorite photo of the week from our Wildlife
                 Photo of the Day website. This week we chose a giraffe in South Africa.</p>
-            <p class="date"><strong><a href="">PHOTOGRAPHY</a></strong> / JANUARY 17, 2020</p>
-        </div>
+            <p class="date"><strong><a class="underline-hover" href="">PHOTOGRAPHY</a></strong> / JANUARY 17, 2020</p>
+        </article>
 
     </div>
 
@@ -193,16 +201,19 @@
         <div class="top-grid container-padding-large">
 
             <article class="top-post">
-                <div class="top-post__image" role="img" aria-label="a picture of places you should visit in 2020"
-                    style="background-image: url(images/places-to-visit-in-2020.jpg)">
+                <div class="top-post__image-wrapper">
+                    <img class="top-post__image" src="images/places-to-visit-in-2020.jpg"
+                        alt="a picture of places you should visit in 2020">
                 </div>
                 <div class="top-post__text">
-                    <p class="date"><strong><a href="blogpost.html">Travel Tips</a></strong> / 28 JANUARY 2020</p>
+                    <p class="date"><strong><a class="underline-hover" href="blogpost.html">Travel Tips</a></strong> /
+                        28 JANUARY 2020</p>
                     <h4 class="top-post__title">
-                        <a href="blogpost.html">9 Nat Hab destinations from NYT’s 52 places to visit in 2020</a>
+                        <a class="underline-hover" href="blogpost.html">9 Nat Hab destinations from NYT’s 52 places to
+                            visit in 2020</a>
                     </h4>
                     <div class="top-post-meta">
-                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <a href="blogpost.html" class="underline-hover">READ MORE</a>
                         <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
                                 aria-label="comments"></i>200</div>
                     </div>
@@ -210,15 +221,19 @@
             </article>
 
             <article class="top-post">
-                <div class="top-post__image" role="img" aria-label="an image of people running from fire"
-                    style="background-image: url(images/world-on-fire.jpg)"></div>
+                <div class="top-post__image-wrapper">
+                    <img class="top-post__image" src="images/world-on-fire.jpg"
+                        alt="an image of people running from fire">
+                </div>
                 <div class="top-post__text">
-                    <p class="date"><strong><a href="blogpost.html">News & More</a></strong> / 8 JANUARY 2020</p>
+                    <p class="date"><strong><a class="underline-hover" href="blogpost.html">News & More</a></strong> / 8
+                        JANUARY 2020</p>
                     <h4 class="top-post__title">
-                        <a href="blogpost.html">A World on Fire: Battling Blazes in Borneo’s Rain Forests</a>
+                        <a class="underline-hover" href="blogpost.html">A World on Fire: Battling Blazes in Borneo’s
+                            Rain Forests</a>
                     </h4>
                     <div class="top-post-meta">
-                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <a href="blogpost.html" class="underline-hover">READ MORE</a>
                         <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
                                 aria-label="comments"></i>196</div>
                     </div>
@@ -226,17 +241,19 @@
             </article>
 
             <article class="top-post">
-                <div class="top-post__image" role="img"
-                    aria-label="picture of a narwhal and baluga whale hybrid commonly called a narluga"
-                    style="background-image: url(images/narluga-narwhal-baluga-whale.jpg)">
+                <div class="top-post__image-wrapper">
+                    <img class="top-post__image" src="images/narluga-narwhal-baluga-whale.jpg"
+                        alt="picture of a narwhal and baluga whale hybrid commonly called a narluga">
                 </div>
                 <div class="top-post__text">
-                    <p class="date"><strong><a href="blogpost.html">Conservation</a></strong> / AUGUST 13, 2019</p>
+                    <p class="date"><strong><a class="underline-hover" href="blogpost.html">Conservation</a></strong> /
+                        AUGUST 13, 2019</p>
                     <h4 class="top-post__title">
-                        <a href="blogpost.html">Greenland Whale Proves to Be the First Narwhal-Beluga Hybrid </a>
+                        <a class="underline-hover" href="blogpost.html">Greenland Whale Proves to Be the First
+                            Narwhal-Beluga Hybrid </a>
                     </h4>
                     <div class="top-post-meta">
-                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <a href="blogpost.html" class="underline-hover">READ MORE</a>
                         <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
                                 aria-label="comments"></i>185</div>
                     </div>
@@ -244,15 +261,19 @@
             </article>
 
             <article class="top-post">
-                <div class="top-post__image" role="img" aria-label="picture of elephants at a world heritage site"
-                    style="background-image: url(images/world-heritage-sites.jpg)"></div>
+                <div class="top-post__image-wrapper">
+                    <img class="top-post__image" src="images/world-heritage-sites.jpg"
+                        alt="picture of elephants at a world heritage site">
+                </div>
                 <div class="top-post__text">
-                    <p class="date"><strong><a href="blogpost.html">Travel Tips</a></strong> / 8 JANUARY 2020</p>
+                    <p class="date"><strong><a class="underline-hover" href="blogpost.html">Travel Tips</a></strong> / 8
+                        JANUARY 2020</p>
                     <h4 class="top-post__title">
-                        <a href="blogpost.html">New Destinations: Italy, Australia, the Cotswolds & More!</a>
+                        <a class="underline-hover" href="blogpost.html">New Destinations: Italy, Australia, the
+                            Cotswolds & More!</a>
                     </h4>
                     <div class="top-post-meta">
-                        <a href="blogpost.html" class="top-post-link">READ MORE</a>
+                        <a href="blogpost.html" class="underline-hover">READ MORE</a>
                         <div class="top-post-comments"><i class="fa fa-comments" aria-hidden="true"
                                 aria-label="comments"></i>176</div>
                     </div>
