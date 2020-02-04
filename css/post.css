@@ -1,4 +1,6 @@
 @import "category.css";
+@import "post-medium.css";
+@import "post-large.css";
 
 .blog-header {
   display: flex;
