@@ -1,3 +1,5 @@
+@import "category.css";
+
 .blog-header {
   display: flex;
   flex-direction: column;
@@ -69,6 +71,34 @@
 
 .blog-body-image {
   width: 100%;
+}
+
+.blog-image-caption {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.quote-wrapper {
+  margin: 8vw;
+}
+
+.quote {
+  font-size: 1rem;
+  font-weight: 700;
+  color: grey;
+  /* opacity: 0.6; */
+  position: relative;
+}
+
+.quote::before {
+  color: var(--blog-red);
+  content: "\f10d";
+  font-family: "FontAwesome";
+  font-size: 3rem;
+  line-height: 1rem;
+  margin-right: 10px;
 }
 
 .blog-body-image-multiple {
@@ -184,7 +214,7 @@
   color: var(--blog-red);
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 682px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .blog-header {
     display: flex;
     flex-direction: row;
@@ -247,7 +277,7 @@
   }
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1000px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
   .blog-header {
     display: flex;
     flex-direction: row;
@@ -312,6 +342,14 @@
   .main-text {
     grid-column: span 2;
     grid-row-start: 1;
+  }
+
+  .quote-wrapper {
+    margin: 4vw;
+  }
+
+  .quote {
+    font-size: 1.5rem;
   }
 
   .top-wrapper {
