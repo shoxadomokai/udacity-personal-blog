@@ -229,7 +229,7 @@
   opacity: 0.5;
 }
 
-@media only screen and (min-device-width: 682px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 682px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .homepage-banner-title {
     font-size: 1.5625rem;
   }
@@ -300,7 +300,7 @@
   }
 }
 
-@media screen and (min-device-width: 1000px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1000px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
   .homepage-banner {
     padding: 0 13vw;
   }
